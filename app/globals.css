@@ -8,8 +8,28 @@
   box-sizing: border-box;
 }
 
+
 .container{
-  max-width: 1280px !important ;
+  max-width: 1280px ;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+
+
+/* styles/globals.css yoki styles/snow.css */
+
+@keyframes snow {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); } /* Ekran pastiga yetadi */
+}
+
+.snowflake {
+  position: fixed; /* fixed pozitsiyada qoldiriladi */
+  top: -10px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: snow 10s linear infinite;
+  pointer-events: none;
 }

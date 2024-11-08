@@ -71,7 +71,7 @@ const Portfolio = () => {
         <hr className={currentTranslation.hr} />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
         {projects.map((project, index) => (
           <div key={index} className="overflow-hidden custom-glow w-full sm:w-[350px] lg:w-[350px] mx-auto relative rounded-lg border border-gray-400 border-opacity-40 shadow-lg">
             <div className="overflow-hidden">

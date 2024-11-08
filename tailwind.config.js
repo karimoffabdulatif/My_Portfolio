@@ -9,6 +9,9 @@ const tailwindConfig = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        slate: {
+          930: "#020F18", 
+        },
       },
       keyframes: {
         fadeInAndClear: {

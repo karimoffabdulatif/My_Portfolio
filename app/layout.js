@@ -1,4 +1,6 @@
 import Header from "@/components/header";
+import SnowEffect from '@/components/SnowEffect';
+
 import { LanguageProvider } from "@/context/LanguageContext"; // Import qiling
 import "./globals.css";
 
@@ -11,7 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <LanguageProvider> 
       <html lang="en">
-        <body className="bg-slate-900">
+      <SnowEffect />
+        <body className="bg-slate-930">
           <Header />
           <hr className="opacity-10 " />
           <main>

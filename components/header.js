@@ -69,7 +69,7 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex gap-2 pr-[100px] pt-[8px] text-slate-400 font-medium">
+          <div className="hidden md:flex gap-6 pr-[170px] pt-[8px] text-slate-400 font-medium">
             {links[language].map((item, index) => (
               <Link
                 href={item.path}
@@ -81,6 +81,7 @@ const Header = () => {
                 {item.title}
               </Link>
             ))}
+          </div>
             <div className="relative flex items-center">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -115,7 +116,6 @@ const Header = () => {
                 </div>
               )}
             </div>
-          </div>
 
           <div className="md:hidden">
             <button onClick={toggleMenu} aria-label="Menuni ochish">
